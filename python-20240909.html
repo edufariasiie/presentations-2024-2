@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>O Poder da Manipulação de Strings e Números no Python</title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Slide 1: Capa -->
+            <section>
+                <h2>O Poder da Manipulação de Strings e Números no Python</h2>
+                <br>
+                <p><strong>Nome:</strong> Eduardo Augusto Figueiredo de Faria</p>
+                <p><strong>Curso:</strong> Engenharia de Software</p>
+                <p><strong>Disciplina:</strong> Algoritmos</p>
+                <p><strong>Professor:</strong> Márcio Garrido</p>
+                <p><strong>Data:</strong> 2024</p>
+            </section>
+
+            <!-- Slide 2: Introdução -->
+            <section>
+                <h2>Introdução</h2>
+                <p>A manipulação de strings e números no Python é fundamental para programadores.</p>
+                <p>Strings são sequências de caracteres que podem ser modificadas e analisadas.</p>
+                <p>Números permitem operações matemáticas robustas e precisas.</p>
+                <p><strong>Objetivo:</strong> Entender as operações manipulação em Python.</p>
+            </section>
+
+            <!-- Slide 3: Operações Básicas com Strings -->
+            <section>
+                <h3>Operações Básicas com Strings</h3>
+                <p><strong>Concatenação:</strong> Uso do operador <code>+</code>.</p>
+                <pre><code data-trim data-noescape>
+nome_completo = "Eduardo" + " Faria"
+print(nome_completo)  # Eduardo Faria
+                </code></pre>
+
+                <p><strong>Repetição:</strong> Uso do operador <code>*</code>.</p>
+                <pre><code data-trim data-noescape>
+repeticao = "Python " * 3
+print(repeticao)  # Python Python Python
+                </code></pre>
+
+                <p><strong>Indexação e Fatiamento:</strong></p>
+                <pre><code data-trim data-noescape>
+palavra = "Programação"
+print(palavra[0])  # P
+print(palavra[-1])  # o
+print(palavra[0:5])  # Progr
+                </code></pre>
+            </section>
+
+            <!-- Slide 4: Métodos de Manipulação de Strings -->
+            <section>
+                <h3>Métodos de Manipulação de Strings</h3>
+                <p><strong>Alterar o caso das letras:</strong></p>
+                <pre><code data-trim data-noescape>
+texto = "Python é ótimo!"
+print(texto.upper())  # PYTHON É ÓTIMO!
+print(texto.lower())  # python é ótimo!
+                </code></pre>
+
+                <p><strong>Remover espaços em branco:</strong></p>
+                <pre><code data-trim data-noescape>
+nome = " Eduardo "
+print(nome.strip())  # Eduardo
+                </code></pre>
+
+                <p><strong>Substituir partes da string:</strong></p>
+                <pre><code data-trim data-noescape>
+saudacao = "Olá, Mundo!"
+print(saudacao.replace("Mundo", "Python"))  # Olá, Python!
+                </code></pre>
+            </section>
+
+            <!-- Slide 5: Escapando Caracteres em Strings -->
+            <section>
+                <h3>Escapando Caracteres em Strings</h3>
+                <p><strong>Sequências de escape:</strong> Para incluir caracteres especiais.</p>
+                <ul>
+                    <li><strong>Nova linha:</strong> <code>\n</code></li>
+                    <li><strong>Tabulação:</strong> <code>\t</code></li>
+                </ul>
+                <pre><code data-trim data-noescape>
+texto = "Linha 1\nLinha 2\tcom tabulação"
+print(texto)
+# Saída:
+# Linha 1
+# Linha 2    com tabulação
+                </code></pre>
+            </section>
+
+            <!-- Slide 6: Operações Aritméticas Básicas com Números -->
+            <section>
+                <h3>Operações Aritméticas Básicas com Números</h3>
+                <ul>
+                    <li>Adição: <code>+</code></li>
+                    <li>Subtração: <code>-</code></li>
+                    <li>Multiplicação: <code>*</code></li>
+                    <li>Divisão: <code>/</code></li>
+                    <li>Exponenciação: <code>**</code></li>
+                </ul>
+                <pre><code data-trim data-noescape>
+x = 10
+y = 3
+print(x + y)  # 13
+print(x / y)  # 3.3333
+print(x ** y)  # 1000
+                </code></pre>
+            </section>
+
+            <!-- Slide 7: Precisão e Tipos de Dados Numéricos -->
+            <section>
+                <h3>Precisão e Tipos de Dados Numéricos</h3>
+                <p><strong>Inteiros (int):</strong> Para contagens exatas.</p>
+                <p><strong>Ponto flutuante (float):</strong> Para cálculos que requerem frações decimais.</p>
+                <p><strong>Conversão entre tipos:</strong></p>
+                <pre><code data-trim data-noescape>
+numero_str = "123"
+numero_int = int(numero_str)
+numero_float = float(numero_str)
+print(numero_int, numero_float)  # 123 123.0
+                </code></pre>
+            </section>
+
+            <!-- Slide 8: Considerações Finais -->
+            <section>
+                <h2>Considerações Finais</h2>
+                <p>A manipulação de strings e números é uma habilidade essencial no Python.</p>
+                <p>Dominar essas técnicas permite processar dados de forma eficiente em diversas áreas.</p>
+                <p>O Python oferece uma ampla gama de métodos e operações para facilitar o trabalho com esses tipos de dados.</p>
+            </section>
+
+            <!-- Slide 9: Referências -->
+            <section>
+                <h2>Referências</h2>
+                <ul style="font-size: 22px;">
+                    <li>FREECODECAMP. Python String Manipulation Handbook – Learn How to Manipulate Python Strings for Beginners. Disponível em: <a href="https://www.freecodecamp.org" target="_blank">https://www.freecodecamp.org</a>. Acesso em: 2 set. 2024.</li>
+                    <br>
+                    <li>PYTHONFORBEGINNERS. String Manipulation in Python. Disponível em: <a href="https://www.pythonforbeginners.com" target="_blank">https://www.pythonforbeginners.com</a>. Acesso em: 2 set. 2024.</li>
+                    <br>
+                    <li>PYTHON TUTORIAL. An Essential Guide to Python String By Practical Examples. Disponível em: <a href="https://www.pythontutorial.net" target="_blank">https://www.pythontutorial.net</a>. Acesso em: 2 set. 2024.</li>
+                    <br>
+                    <li>REAL PYTHON. Strings and Character Data in Python. Disponível em: <a href="https://realpython.com" target="_blank">https://realpython.com</a>. Acesso em: 2 set. 2024.</li>
+                    <br>
+                    <li>W3SCHOOLS. Python String Methods. Disponível em: <a href="https://www.w3schools.com" target="_blank">https://www.w3schools.com</a>. Acesso em: 2 set. 2024.</li>
+                  </ul>
+                  
+            </section>
+        </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
+    </script>
+</body>
+</html>
